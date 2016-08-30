@@ -1,0 +1,25 @@
+[root@localhost zhu]# git clone https://github.com/rkulla/pydiction.git
+
+# 注意这三个文件
+
+python_pydiction.vim    #vim插件
+
+complete-dict    #python关键字和模块列表，
+
+pydiction.py   #python脚本，可以添加更多的模块
+
+1.查看家目录下是否有.vim目录，若没有则创建。
+
+mkdir  -p  ~/.vim/after/ftplugin/pydiction
+
+2.把上面下载的三个文件放到指定的位置
+
+mv  python_pydiction.vim  ~/.vim/after/ftplugin/
+
+mv complete-dict pydiction.py  ~/.vim/after/ftplugin/pydiction/
+
+3.修改 ~/.vimrc文件，若没有则创建，在该文件中添加下面两行。
+
+filetype plugin on
+
+let g:pydiction_location='~/.vim/after/ftplugin/pydiction/complete-dict'
