@@ -119,11 +119,8 @@ def mail(content):
 def compare(tomcat, Eden_Space, PS_Old_Generation):
     if float(Eden_Space) < 1:
         mail("project {0}'s   Eden_Space  is {1}".format(tomcat[0], Eden_Space))
-    elif float(Eden_Space) > 90:
-        mail("project {0}'s   Eden_Space  is {1}".format(tomcat[0], Eden_Space))
-    elif float(PS_Old_Generation) > 95:
-        mail("project {0}'s   PS_Old_Generation  is {1}".format(tomcat[0], PS_Old_Generation))
-
+    elif float(Eden_Space) > 90  and  float(PS_Old_Generation) > 95:
+        mail("project {0}'s   Eden_Space  is {1}  and  PS_Old_Generation is {2}".format(tomcat[0], Eden_Space, PS_Old_Generation))
 
 @task
 @roles('web1')
