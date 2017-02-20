@@ -1,12 +1,12 @@
 # coding:utf-8
-
+# weixin企业号
 import requests
 
 
 def get_token():
     values = {
-        'corpid': 'wx3811723127b64d48',
-        'corpsecret': 'kMQMdnd72ah_Aovqu6Q3fHG_oMpCHuLBoDFoJ7laeMZ9VeT9s1qdOLa5T-UTVnVo'
+        'corpid': 
+        'corpsecret': 
     }
     url = 'https://qyapi.weixin.qq.com/cgi-bin/gettoken'
     r = requests.get(url, params=values)
