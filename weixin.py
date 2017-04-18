@@ -26,8 +26,10 @@ def send_msg(token, msg):
         'safe': '0'
 
     }
-    requests.post(url, json=data)
-
+#    requests.post(url, json=data)
+#    ensure_ascii确保中文可以正常输出
+     payload = json.dumps(data,encoding='utf-8',ensure_ascii=False)
+     requests.post(url,data=payload)
 
 if __name__ == '__main__':
     msg = 'Hello!'
