@@ -7,10 +7,10 @@ from random import randint
 
 class Mail(object):
     def __init__(self):
-        self.mail_from = 'wanghuidong@cmcaifu.com'
-        self.passwd = 'qwe123!'
-        self.smtp_server = 'mail.cmcaifu.com'
-        # self.mail_to = ['wanghd.dlc@outlook.com', '376908943@qq.com']
+        self.mail_from = '*********'
+        self.passwd = '*****'
+        self.smtp_server = '********'
+        # self.mail_to = ['******', '******']
         self.mail_to = '359274291@qq.com'
 
     def wrapper(self, subject):
