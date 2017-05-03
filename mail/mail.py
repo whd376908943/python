@@ -8,7 +8,7 @@ from_address = 'wanghuidong@cmcaifu.com'
 to_address = ['wanghd.dlc@outlook.com','sysadmin@cmcaifu.com'] 
 server = 'mail.cmcaifu.com' 
 passwd = '****' 
-subject = u'城满财富邮件推送测试' 
+subject = u'邮件推送测试' 
 
 msg = MIMEText(''' hello!<br/> test!<hr/> ''', 'html', 'utf-8') 
 msg['Subject'] = subject 
