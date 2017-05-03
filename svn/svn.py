@@ -10,10 +10,7 @@ user_filter = [
     'xuejie'
 ]
 project_filter = [
-    '/trunk/outside/arch-base',
-    '/trunk/outside/arch-base/code',
-    '/trunk/outside/arch-base/code/backend_html',
-    '/trunk/outside/arch-biz'
+    '/trunk/outside/arch-base'
 ]
 
 
@@ -80,16 +77,16 @@ def get_res():
 
 class Mail(object):
     def __init__(self):
-        self.mail_from = 'monitor@vjwealth.com'
-        self.passwd = 'WEI2016jiankongbaojing'
-        self.smtp_server = 'smtp.exmail.qq.com'
-        self.mail_to = 'wanghuidong@vjwealth.com'
+        self.mail_from = '********'
+        self.passwd = '*******'
+        self.smtp_server = '******'
+        self.mail_to = '******'
 
     def wrapper(self, subject):
         self.msg = MIMEText(get_res(), 'html', 'utf-8')
         self.msg['Subject'] = subject
         self.msg['From'] = self.mail_from
-        self.msg['To'] = 'wanghuidong@vjwealth.com'
+        self.msg['To'] = '********'
 
     def mail(self):
         smtp = smtplib.SMTP(self.smtp_server)
