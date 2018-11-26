@@ -1,4 +1,5 @@
 vm.py 包含在 vSphere 从模板克隆虚拟机 及 初始化虚拟机(设置ip、重启网络) 两个阶段
+
 传参样例:
 args = {
         'host': vip,                              # vSphere ip, or ESXI ip
